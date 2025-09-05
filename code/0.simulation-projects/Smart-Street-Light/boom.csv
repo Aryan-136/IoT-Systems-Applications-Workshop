@@ -1,0 +1,8 @@
+﻿Name,Quantity,Component
+"T1",1," NPN Transistor (BJT)"
+"L1",1," Light bulb"
+"P1",1,"5 , 5  Power Supply"
+"U1",1," Arduino Uno R3"
+"R1",1," Photoresistor"
+"R2",1,"1 kΩ Resistor"
+"R3",1,"10 kΩ Resistor"
