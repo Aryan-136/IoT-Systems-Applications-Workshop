@@ -1,119 +1,93 @@
-# 🌍 IoT Systems & Applications Workshop 2025  
+# 💡 Smart Street Light – Arduino Project
 
-🚀 **IoT Systems & Applications Workshop 2025** led by **Aryan Pandya (Trainer & Organizer)** in collaboration with the **MCA Department, Sarvajanik College of Engineering & Technology (SCET)**, with guidance and support from **Dr. Kaushika Pal (Faculty, MCA Dept, SCET)**.  
+This repository contains the source code and setup guide for building a simple **Smart Street Light** using **Arduino Uno**.  
+The system uses an **LDR (Light Dependent Resistor)** to detect surrounding brightness and automatically turns a streetlight **ON or OFF**.
 
-This workshop is designed to provide students with a complete **IoT learning experience** — from **concepts and simulations** to **hardware prototyping and real-world automation**. Participants will explore IoT fundamentals, build projects using **ESP8266 microcontrollers and sensors**, and learn to connect devices with **cloud dashboards, automation systems, and disaster management scenarios**.  
-
-💡 **Key Highlights**  
-- Hands-on with **ESP8266, DHT, BMP280, Rain & Gas sensors, and more**  
-- **Simulation projects**: Smart Street Light, Weather Station  
-- **Practical projects**: RC Car, Drone, Smart Home, Gate Automation, Cyber IoT  
-- **Live data monitoring** with **cloud dashboards**  
-- **Disaster scenario demo** with alerts via **LEDs, Buzzers & Cloud notifications**  
- 
+This project is designed for **beginners** and will be performed as part of a **student workshop** using **Tinkercad Circuits**.
 
 ---
 
-## 📅 Event Details
-- **Date:** 17th September 2025  
-- **Time:** 9:00 AM – 4:00 PM  
-- **Venue:** Sarvajanik College of Engineering & Technology (SCET), Surat  
-- **Location:** Computation Lab, MCA Department, SCET  
-- **Trainer & Organizer:** Aryan Pandya  
-- **Faculty Support:** Dr. Kaushika Pal, MCA Department, SCET  
+## 📌 Features
+- 🌙 Automatically turns the street light **ON** at night (low light)  
+- ☀️ Turns the light **OFF** during the day (high light)  
+- 🔧 Uses **LDR sensor** as input and **bulb** as output  
+- 🖥️ Displays sensor readings and status in the **Serial Monitor**  
 
 ---
 
-## 📅 Workshop Schedule  👉 [Click here to download the full day schedule (PDF)](https://github.com/Aryan-136/IoT-Systems-Applications-Workshop/blob/639d5b818c1c7e5d7a68964835c1b6ad0b20c320/IoT%20Workshop%20%E2%80%93%20Full%20Day%20Schedule.pdf)
+## 🛠️ Components Used
 
-  
-
-### 🌅 Morning Session  
-- **9:00 AM – 9:15 AM** → Registration & Welcome  
-- **9:15 AM – 10:45 AM** → Introduction to IoT & Real-Life Applications  
-  - IoT concepts & fundamentals  
-  - Real-world case studies  
-  - Future scope & career opportunities  
-- **10:45 AM – 11:00 AM** → Tea / Coffee Break + Team Distribution for Midday Session  
-
----
-
-### 🔄 Midday Session (Parallel Activities)  
-- **11:00 AM – 12:00 PM** →  
-  - **Group A** → Project Showcases *(RC Car, Drone, Gate Automation, Cyber IoT, Smart Home)*  
-  - **Group B** → Simulation Projects *(Smart Street Light + Weather Station)*  
-
-- **12:00 PM – 1:00 PM** →  
-  - **Group B** → Project Showcases *(RC Car, Drone, Gate Automation, Cyber IoT, Smart Home)*  
-  - **Group A** → Simulation Projects *(Smart Street Light + Weather Station)*  
+| Label | Quantity | Component |
+|-------|----------|-----------|
+| T1    | 1 | NPN Transistor (BJT) |
+| L1    | 1 | Light bulb |
+| P1    | 1 | 5V Power Supply |
+| U1    | 1 | Arduino Uno R3 |
+| R1    | 1 | Photoresistor (LDR) |
+| R2    | 1 | 1 kΩ Resistor |
+| R3    | 1 | 10 kΩ Resistor |
 
 ---
 
-### 🍴 Lunch Break  
-- **1:00 PM – 2:00 PM** → Lunch & Networking  
+## 🖥️ Getting Started with Tinkercad
+
+### 1. Create a Tinkercad Account
+1. Visit 👉 [https://www.tinkercad.com](https://www.tinkercad.com)  
+2. Click **Join Now**  
+3. Sign up with your **Google account** or **email ID**  
+4. After signing up, log in to your Tinkercad dashboard  
+
+### 2. Create a New Circuit
+1. On the dashboard, click **Circuits → Create New Circuit**  
+2. Drag and drop the following components from the **components panel**:
+   - Arduino Uno R3  
+   - Photoresistor (LDR)  
+   - Light bulb  
+   - Resistors (1kΩ & 10kΩ)  
+   - NPN Transistor  
+   - Power supply (5V)  
+3. Connect the components as described in the **Circuit Setup** section below  
+
+### 3. Upload the Code
+1. Click **Code → Text → C++ (Arduino)**  
+2. Copy the Arduino code from this repository  
+3. Paste it inside the Tinkercad editor  
+4. Click **Start Simulation** to run your project  
 
 ---
 
-### 🛠️ Afternoon Session (Hands-On Practical)  
-**Project: Smart Weather & Disaster Management System**  
+## 🔌 Circuit Setup (Pin Connections)
 
-- **2:00 PM – 2:15 PM** → Introduction to Hardware & Sensors  
-  - ESP8266, DHT11/DHT22, BMP280, Rain Sensor, Soil Moisture, MQ-135  
-
-- **2:15 PM – 2:45 PM** → Wiring & Setup (Team-based)  
-
-- **2:45 PM – 3:30 PM** → Coding & Live Data Monitoring  
-  - Serial Monitor outputs  
-  - Cloud dashboard integration  
-
-- **3:30 PM – 3:50 PM** → Disaster Scenario Demo  
-  - Rain, Flood & Pollution alerts  
-  - Visual (LED) + Audio (Buzzer) alarms  
-
-- **3:50 PM – 4:00 PM** → Wrap-Up, Feedback Collection, Certificates & Group Photo  
+- **A5** → LDR (Photoresistor) input  
+- **D3** → Light bulb output (through NPN transistor)  
+- **Power Supply (5V)** → Powers the circuit  
+- **Resistors** → Used for proper biasing and LDR sensitivity  
 
 ---
 
-## 🛠️ Hardware & Software Used
-- **Microcontroller:** ESP8266 NodeMCU  
-- **Sensors:**  
-  - DHT11 / DHT22 – Temperature & Humidity  
-  - BMP280 – Pressure & Altitude  
-  - Rain Sensor – Flood Alert  
-  - Soil Moisture Sensor – Agriculture Use  
-  - MQ-135 – Air Quality / Pollution  
-- **Actuators:** Buzzer, LED  
-- **Simulation Platforms:** Wokwi, Tinkercad, Proteus  
-- **Cloud Platforms:** ThingsBoard / Blynk / MQTT Dashboard  
+## 📜 Arduino Code
+
+The Arduino code is available in this repository.  
+
+### Code Summary:
+- Reads **LDR sensor value** from pin A5  
+- Compares it with a **threshold value (512)**  
+- Turns **light ON** when it’s dark  
+- Turns **light OFF** when it’s bright  
+- Prints sensor values & status in the **Serial Monitor**  
 
 ---
 
-## 🎯 Learning Outcomes
-- Fundamentals of IoT systems & applications  
-- Practical experience with ESP8266 and essential sensors  
-- Simulations + hardware integration workflow  
-- Building IoT projects with **real-world disaster management use cases**  
-- Team collaboration and problem-solving skills  
-- Certificate of Participation  
+## ▶️ How to Run (Workshop Instructions)
+1. Open [Tinkercad Circuits](https://www.tinkercad.com)  
+2. Create a new circuit and add the listed components  
+3. Wire the circuit as per instructions  
+4. Copy-paste the code into the code editor  
+5. Start the simulation  
+6. Observe how the light turns **ON/OFF** depending on brightness  
 
 ---
 
-## 👨‍🏫 Trainer & Organizer
-**Aryan Pandya** – IoT & Cybersecurity Specialist  
-- Conducting IoT, Security & Automation workshops  
-- Organizer of community tech meetups & hands-on sessions  
+## 📊 Example Outputs (Serial Monitor)
 
-🔗 Connect with me:  
-- [LinkedIn](https://www.linkedin.com/in/aryan-pandya)  
-- [Instagram](https://instagram.com/yourprofile)  
-- [Linktree](https://linktr.ee/yourprofile)  
-
----
-
-## 📜 License
-This repository uses dual licensing:  
-
-- **Code** → MIT License  
-- **Slides, Docs & Workshop Materials** → CC BY-NC 4.0  
-
-See the [LICENSE](./LICENSE) file for details.  
+- When it’s **bright (day):**
