@@ -1,119 +1,98 @@
-# 🌍 IoT Systems & Applications Workshop 2025  
+# 🌦 IoT Weather Station – Arduino Project
 
-🚀 **IoT Systems & Applications Workshop 2025** led by **Aryan Pandya (Trainer & Organizer)** in collaboration with the **MCA Department, Sarvajanik College of Engineering & Technology (SCET)**, with guidance and support from **Dr. Kaushika Pal (Faculty, MCA Dept, SCET)**.  
+This repository contains the source code and setup guide for building a simple *Weather Station* using *Arduino Uno*.  
+It measures *Temperature, Air Quality, and Humidity, and displays them on a **16x2 LCD (I2C)*.  
 
-This workshop is designed to provide students with a complete **IoT learning experience** — from **concepts and simulations** to **hardware prototyping and real-world automation**. Participants will explore IoT fundamentals, build projects using **ESP8266 microcontrollers and sensors**, and learn to connect devices with **cloud dashboards, automation systems, and disaster management scenarios**.  
-
-💡 **Key Highlights**  
-- Hands-on with **ESP8266, DHT, BMP280, Rain & Gas sensors, and more**  
-- **Simulation projects**: Smart Street Light, Weather Station  
-- **Practical projects**: RC Car, Drone, Smart Home, Gate Automation, Cyber IoT  
-- **Live data monitoring** with **cloud dashboards**  
-- **Disaster scenario demo** with alerts via **LEDs, Buzzers & Cloud notifications**  
- 
+This project is designed for *beginners* and will be performed as part of a *student workshop* using *Tinkercad Circuits*.
 
 ---
 
-## 📅 Event Details
-- **Date:** 17th September 2025  
-- **Time:** 9:00 AM – 4:00 PM  
-- **Venue:** Sarvajanik College of Engineering & Technology (SCET), Surat  
-- **Location:** Computation Lab, MCA Department, SCET  
-- **Trainer & Organizer:** Aryan Pandya  
-- **Faculty Support:** Dr. Kaushika Pal, MCA Department, SCET  
+## 📌 Features
+- 📍 Measure *Temperature* using TMP36 sensor  
+- 📍 Monitor *Air Quality* using Gas Sensor  
+- 📍 Simulate *Humidity* using a Potentiometer  
+- 📍 Use *Pushbuttons* to switch between modes:
+  - Button 1 → Temperature Mode  
+  - Button 2 → Air Quality Mode  
+  - Button 3 → Humidity Mode  
+- 📍 Display data in real-time on *16x2 LCD (I2C)*  
 
 ---
 
-## 📅 Workshop Schedule  👉 [Click here to download the full day schedule (PDF)](https://github.com/Aryan-136/IoT-Systems-Applications-Workshop/blob/639d5b818c1c7e5d7a68964835c1b6ad0b20c320/IoT%20Workshop%20%E2%80%93%20Full%20Day%20Schedule.pdf)
+## 🛠 Components Used
 
-  
-
-### 🌅 Morning Session  
-- **9:00 AM – 9:15 AM** → Registration & Welcome  
-- **9:15 AM – 10:45 AM** → Introduction to IoT & Real-Life Applications  
-  - IoT concepts & fundamentals  
-  - Real-world case studies  
-  - Future scope & career opportunities  
-- **10:45 AM – 11:00 AM** → Tea / Coffee Break + Team Distribution for Midday Session  
-
----
-
-### 🔄 Midday Session (Parallel Activities)  
-- **11:00 AM – 12:00 PM** →  
-  - **Group A** → Project Showcases *(RC Car, Drone, Gate Automation, Cyber IoT, Smart Home)*  
-  - **Group B** → Simulation Projects *(Smart Street Light + Weather Station)*  
-
-- **12:00 PM – 1:00 PM** →  
-  - **Group B** → Project Showcases *(RC Car, Drone, Gate Automation, Cyber IoT, Smart Home)*  
-  - **Group A** → Simulation Projects *(Smart Street Light + Weather Station)*  
+| Label | Quantity | Component |
+|-------|----------|-----------|
+| U1    | 1 | Arduino Uno R3 |
+| U2    | 1 | Temperature Sensor (TMP36) |
+| U3    | 1 | MCP23008-based, 32 (0x20) LCD 16x2 (I2C) |
+| S1, S2, S3 | 3 | Pushbuttons |
+| R1    | 1 | 4 kΩ Resistor |
+| GAS1  | 1 | Gas Sensor |
+| R2, R3, R4 | 3 | 10 kΩ Resistors |
+| Rpot1 | 1 | 10 kΩ Potentiometer |
 
 ---
 
-### 🍴 Lunch Break  
-- **1:00 PM – 2:00 PM** → Lunch & Networking  
+## 🖥 Getting Started with Tinkercad
+
+### 1. Create a Tinkercad Account
+1. Visit 👉 [https://www.tinkercad.com](https://www.tinkercad.com)  
+2. Click *Join Now*  
+3. Sign up with your *Google account* or *email ID*  
+4. After signing up, log in to your Tinkercad dashboard  
+
+### 2. Create a New Circuit
+1. On the dashboard, click *Circuits → Create New Circuit*  
+2. Drag and drop the following components from the *components panel*:
+   - Arduino Uno R3  
+   - TMP36 (Temperature Sensor)  
+   - Gas Sensor  
+   - Potentiometer (to simulate humidity)  
+   - 16x2 LCD (with I2C interface)  
+   - 3 Pushbuttons + Resistors  
+3. Connect the components as described in the *Circuit Setup* section below  
+
+### 3. Upload the Code
+1. Click *Code → Text → C++ (Arduino)*  
+2. Copy the Arduino code from this repository  
+3. Paste it inside the Tinkercad editor  
+4. Click *Start Simulation* to run your project  
 
 ---
 
-### 🛠️ Afternoon Session (Hands-On Practical)  
-**Project: Smart Weather & Disaster Management System**  
+## 🔌 Circuit Setup (Pin Connections)
 
-- **2:00 PM – 2:15 PM** → Introduction to Hardware & Sensors  
-  - ESP8266, DHT11/DHT22, BMP280, Rain Sensor, Soil Moisture, MQ-135  
-
-- **2:15 PM – 2:45 PM** → Wiring & Setup (Team-based)  
-
-- **2:45 PM – 3:30 PM** → Coding & Live Data Monitoring  
-  - Serial Monitor outputs  
-  - Cloud dashboard integration  
-
-- **3:30 PM – 3:50 PM** → Disaster Scenario Demo  
-  - Rain, Flood & Pollution alerts  
-  - Visual (LED) + Audio (Buzzer) alarms  
-
-- **3:50 PM – 4:00 PM** → Wrap-Up, Feedback Collection, Certificates & Group Photo  
+- *A0* → Temperature Sensor (TMP36)  
+- *A1* → Gas Sensor  
+- *A2* → Potentiometer (Humidity simulation)  
+- *D8* → Pushbutton (Temperature mode)  
+- *D9* → Pushbutton (Air Quality mode)  
+- *D10* → Pushbutton (Humidity mode)  
+- *LCD (I2C)* → Connected via MCP23008 (I2C Address 0x20)  
 
 ---
 
-## 🛠️ Hardware & Software Used
-- **Microcontroller:** ESP8266 NodeMCU  
-- **Sensors:**  
-  - DHT11 / DHT22 – Temperature & Humidity  
-  - BMP280 – Pressure & Altitude  
-  - Rain Sensor – Flood Alert  
-  - Soil Moisture Sensor – Agriculture Use  
-  - MQ-135 – Air Quality / Pollution  
-- **Actuators:** Buzzer, LED  
-- **Simulation Platforms:** Wokwi, Tinkercad, Proteus  
-- **Cloud Platforms:** ThingsBoard / Blynk / MQTT Dashboard  
+## 📜 Arduino Code
+
+The Arduino code is available in this repository.  
+It uses the *Adafruit_LiquidCrystal* library to control the LCD.  
+
+### Library Installation
+1. Open *Arduino IDE*  
+2. Go to *Sketch → Include Library → Manage Libraries*  
+3. Search for *Adafruit LiquidCrystal*  
+4. Install the library  
 
 ---
 
-## 🎯 Learning Outcomes
-- Fundamentals of IoT systems & applications  
-- Practical experience with ESP8266 and essential sensors  
-- Simulations + hardware integration workflow  
-- Building IoT projects with **real-world disaster management use cases**  
-- Team collaboration and problem-solving skills  
-- Certificate of Participation  
-
----
-
-## 👨‍🏫 Trainer & Organizer
-**Aryan Pandya** – IoT & Cybersecurity Specialist  
-- Conducting IoT, Security & Automation workshops  
-- Organizer of community tech meetups & hands-on sessions  
-
-🔗 Connect with me:  
-- [LinkedIn](https://www.linkedin.com/in/aryan-pandya)  
-- [Instagram](https://instagram.com/yourprofile)  
-- [Linktree](https://linktr.ee/yourprofile)  
-
----
-
-## 📜 License
-This repository uses dual licensing:  
-
-- **Code** → MIT License  
-- **Slides, Docs & Workshop Materials** → CC BY-NC 4.0  
-
-See the [LICENSE](./LICENSE) file for details.  
+## ▶ How to Run (Workshop Instructions)
+1. Open [Tinkercad Circuits](https://www.tinkercad.com)  
+2. Create a new circuit and add the listed components  
+3. Wire the circuit as per instructions  
+4. Copy-paste the code into the code editor  
+5. Start the simulation  
+6. Use the *3 pushbuttons* to switch between modes:  
+   - *Temperature Mode* → Displays °C with status (hot, cold, etc.)  
+   - *Air Quality Mode* → Displays gas concentration (ppm)  
+   - *Humidity Mode* → Displays % humidity  
