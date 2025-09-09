@@ -104,8 +104,22 @@ This project is designed for *beginners* and will be performed as part of a *stu
 
 ---
 
-## 📜 License
-This project is licensed under the **MIT License**.  
-Feel free to use, modify, and share for educational purposes.  
+## 👨‍🏫 Trainer & Organizer
+**Aryan Pandya** – IoT & Cybersecurity Specialist  
+- Conducting IoT, Security & Automation workshops  
+- Organizer of community tech meetups & hands-on sessions  
+
+🔗 Connect with me:  
+- [LinkedIn](https://www.linkedin.com/in/aryan-pandya)  
+- [Instagram](https://instagram.com/yourprofile)  
+- [Linktree](https://linktr.ee/yourprofile)  
 
 ---
+
+## 📜 License
+This repository uses dual licensing:  
+
+- **Code** → MIT License  
+- **Slides, Docs & Workshop Materials** → CC BY-NC 4.0  
+
+See the [LICENSE](./LICENSE) file for details.  
