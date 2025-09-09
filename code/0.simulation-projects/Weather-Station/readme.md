@@ -19,6 +19,11 @@ This project is designed for *beginners* and will be performed as part of a *stu
 
 ---
 
+## ⚡ Circuit Diagram
+![Circuit Diagram](code/0.simulation-projects/Weather-Station/Incredible Blorr-Fulffy.png)
+
+---
+
 ## 🛠 Components Used
 
 | Label | Quantity | Component |
@@ -83,4 +88,5 @@ This project is designed for *beginners* and will be performed as part of a *stu
    - *Temperature Mode* → Displays °C with status (hot, cold, etc.)  
    - *Air Quality Mode* → Displays gas concentration (ppm)  
    - *Humidity Mode* → Displays % humidity  
+
 
