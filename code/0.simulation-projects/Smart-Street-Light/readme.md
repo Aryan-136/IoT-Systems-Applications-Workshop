@@ -20,7 +20,7 @@ This project is designed for **beginners** and will be performed as part of a **
 ![Circuit Diagram](./circuit.jpg)
 
 
-![Circuit Diagram](./Smart%Street%Light.png)
+![Circuit Diagram](./circuit.png)
 
 
 ---
@@ -101,4 +101,5 @@ The Arduino code is available in this repository.
 ## 📊 Example Outputs (Serial Monitor)
 
 - When it’s **bright (day):**
+
 
