@@ -20,7 +20,8 @@ This project is designed for *beginners* and will be performed as part of a *stu
 ---
 
 ## ⚡ Circuit Diagram
-![Circuit Diagram](./Incredible Blorr-Fulffy.png)
+![Circuit Diagram](./Incredible%20Blorr-Fulffy.png)
+
 
 ---
 
@@ -88,6 +89,7 @@ This project is designed for *beginners* and will be performed as part of a *stu
    - *Temperature Mode* → Displays °C with status (hot, cold, etc.)  
    - *Air Quality Mode* → Displays gas concentration (ppm)  
    - *Humidity Mode* → Displays % humidity  
+
 
 
 
