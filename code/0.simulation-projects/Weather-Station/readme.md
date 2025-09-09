@@ -94,12 +94,18 @@ This project is designed for *beginners* and will be performed as part of a *stu
    - *Air Quality Mode* → Displays gas concentration (ppm)  
    - *Humidity Mode* → Displays % humidity  
 
+---
 
+## 🎯 Workshop Learning Outcomes
+- Understand **Arduino basics**  
+- Learn how to use **Tinkercad for IoT simulations**  
+- Practice connecting **sensors & LCDs**  
+- Build a functional **IoT Weather Station**  
 
+---
 
+## 📜 License
+This project is licensed under the **MIT License**.  
+Feel free to use, modify, and share for educational purposes.  
 
-
-
-
-
-
+---
