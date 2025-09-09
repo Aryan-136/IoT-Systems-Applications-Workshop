@@ -98,9 +98,30 @@ The Arduino code is available in this repository.
 
 ---
 
-## 📊 Example Outputs (Serial Monitor)
+## 🎯 Workshop Learning Outcomes
+- Understand **Photoresistor (LDR) working principle**  
+- Learn how to use **Arduino Uno for automation**  
+- Practice using **Tinkercad for circuit simulation**  
+- Build a functional **Smart Street Light** system  
 
-- When it’s **bright (day):**
+---
 
+## 👨‍🏫 Trainer & Organizer
+**Aryan Pandya** – IoT & Cybersecurity Specialist  
+- Conducting IoT, Security & Automation workshops  
+- Organizer of community tech meetups & hands-on sessions  
 
+🔗 Connect with me:  
+- [LinkedIn](https://www.linkedin.com/in/aryan-pandya)  
+- [Instagram](https://instagram.com/yourprofile)  
+- [Linktree](https://linktr.ee/yourprofile)  
 
+---
+
+## 📜 License
+This repository uses dual licensing:  
+
+- **Code** → MIT License  
+- **Slides, Docs & Workshop Materials** → CC BY-NC 4.0  
+
+See the [LICENSE](./LICENSE) file for details.  
