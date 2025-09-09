@@ -69,20 +69,7 @@ This project is designed for *beginners* and will be performed as part of a *stu
 - *D8* → Pushbutton (Temperature mode)  
 - *D9* → Pushbutton (Air Quality mode)  
 - *D10* → Pushbutton (Humidity mode)  
-- *LCD (I2C)* → Connected via MCP23008 (I2C Address 0x20)  
-
----
-
-## 📜 Arduino Code
-
-The Arduino code is available in this repository.  
-It uses the *Adafruit_LiquidCrystal* library to control the LCD.  
-
-### Library Installation
-1. Open *Arduino IDE*  
-2. Go to *Sketch → Include Library → Manage Libraries*  
-3. Search for *Adafruit LiquidCrystal*  
-4. Install the library  
+- *LCD (I2C)* → Connected via MCP23008 (I2C Address 0x20)    
 
 ---
 
@@ -96,3 +83,4 @@ It uses the *Adafruit_LiquidCrystal* library to control the LCD.
    - *Temperature Mode* → Displays °C with status (hot, cold, etc.)  
    - *Air Quality Mode* → Displays gas concentration (ppm)  
    - *Humidity Mode* → Displays % humidity  
+
