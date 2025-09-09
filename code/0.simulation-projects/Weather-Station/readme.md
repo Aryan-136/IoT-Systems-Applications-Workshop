@@ -20,6 +20,7 @@ This project is designed for *beginners* and will be performed as part of a *stu
 ---
 
 ## ⚡ Circuit Diagram
+![Circuit Diagram](./IoT%Systems%and%Applications%Workshop%project%stimulation%02_%weather%monitoring%station.pdf)
 ![Circuit Diagram](./Incredible%20Blorr-Fulffy.png)
 
 
@@ -89,6 +90,7 @@ This project is designed for *beginners* and will be performed as part of a *stu
    - *Temperature Mode* → Displays °C with status (hot, cold, etc.)  
    - *Air Quality Mode* → Displays gas concentration (ppm)  
    - *Humidity Mode* → Displays % humidity  
+
 
 
 
