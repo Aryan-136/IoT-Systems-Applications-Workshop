@@ -1,4 +1,4 @@
-https://www.tinkercad.com/things/7MCBJ2HEQz6-project-stimulation-02-weather-monitoring-station?sharecode=undefined
+[https://www.tinkercad.com/things/7MCBJ2HEQz6-project-stimulation-02-weather-monitoring-station?sharecode=undefined](https://www.tinkercad.com/things/7MCBJ2HEQz6-project-stimulation-02-weather-monitoring-station?sharecode=VNVADSSn7aQBaEI5H3D-EuOWA37Xi6T7O1XbTCPMKGM)
 
 # 🌦 IoT Weather Station – Arduino Project
 
@@ -125,4 +125,5 @@ This repository uses dual licensing:
 - **Slides, Docs & Workshop Materials** → CC BY-NC 4.0  
 
 See the [LICENSE](./LICENSE) file for details.  
+
 
