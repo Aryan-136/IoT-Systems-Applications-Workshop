@@ -1,3 +1,5 @@
+https://www.tinkercad.com/things/7MCBJ2HEQz6-project-stimulation-02-weather-monitoring-station?sharecode=undefined
+
 # 🌦 IoT Weather Station – Arduino Project
 
 This repository contains the source code and setup guide for building a simple *Weather Station* using *Arduino Uno*.  
@@ -123,3 +125,4 @@ This repository uses dual licensing:
 - **Slides, Docs & Workshop Materials** → CC BY-NC 4.0  
 
 See the [LICENSE](./LICENSE) file for details.  
+
